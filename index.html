@@ -1,0 +1,76 @@
+<head>
+  <title>Stealer's Team</title>
+  <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/scratches-png-32.png">
+</head>
+
+<style>
+* {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body {
+  font-weight: bold;
+  font-family: 'SF Mono', 'Courier New', Courier, monospace;
+  font-size: 42px;
+  color: #ff4473;
+  background: #222;
+  display: flex;
+  height:100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+h1::after {
+  margin-left: 16px;
+  display: inline;
+  content: "i";
+  background: #ff4473;
+  animation: blink 1s infinite;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+</style>
+
+<script type="text/javascript">
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>
+
+<body oncontextmenu="return false">
+  <h1>This website has been compromised by <strong>Stealer's Team!</strong></h1>
+  <img src="https://i.pinimg.com/originals/b2/9f/e9/b29fe968fee40d4ea9f71e4e8bb26b76.gif">
+  <br>
+  <a href="https://bit.ly/discordsst" target="_blank">Join our discord!</a>
+</body>
